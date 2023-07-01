@@ -1,25 +1,17 @@
 package sg.edu.np.mad.practicalmad;
 
-public class User {
-    public String name;
-    public String description;
-    public int id;
-    public boolean followed;
+import android.media.Image;
 
-    public User(String name, String description, int id, boolean followed) {
+public class User {
+    private Image userImage;
+    private String name;
+    private String description;
+
+    public User(String name, String description) {
         this.name = name;
         this.description = description;
-        this.id = id;
-        this.followed = followed;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getDescription() {
         return description;
@@ -29,19 +21,10 @@ public class User {
         this.description = description;
     }
 
-    public int getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public boolean isFollowed() {
-        return followed;
-    }
 
-    public void setFollowed(boolean followed) {
-        this.followed = followed;
-    }
 }
